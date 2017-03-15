@@ -1,0 +1,152 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
+ @import "font-awesome";
+
+ body { padding:0;margin:0;
+  background: url(<%= asset_path 'warborn-angels-bg.png'%>) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.jumbotron {
+  background: url(<%= asset_path 'warborn-jumbo.png'%>) no-repeat center center;
+  height: 275px;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  margin-bottom: 0px;
+}
+
+.bioRhyme {
+font-family: 'BioRhyme', serif;
+color: "@color";
+font-size: 22px;
+}
+
+.divback {
+background-color: #EFEEF9;
+opacity: 0.8;
+margin: 0;
+}
+
+.opaque {
+	opacity: 0.2;
+}
+
+.opaque1 {
+	opacity: 0.9;
+}
+
+.row1 {
+	height: 1em;
+}
+
+.well {
+	height: 325px;
+	opacity: 0.8
+}
+
+.gray-text {
+	color: #8899a6;
+}
+
+
+.mini-pic {
+	width: 50px;
+}
+
+.navbar-pic {
+	width: 25px;
+}
+
+.borderline {
+	border: 1px solid #d8d8d8;
+}
+
+.tweet-area {
+	padding-top: 10px;
+}
+
+.center-it {
+	text-align: center;
+}
+
+.pleft-10 {
+	padding-left: 10px;
+}
+
+.pbot-50 {
+	padding-bottom: 50px;
+}
+
+.new-tweet-area {
+	background-color: #eaf8fd;
+	padding: 10px;
+	border: 1px solid #cbeffb;
+	border-radius: 5px 5px 0 0;
+}
+
+.mtop-6 {
+	margin-top: 6px;
+}
+
+/* Input (Text Field) placeholder text color */
+input::-webkit-input-placeholder {
+color: #2fc2ef !important;
+}
+
+input:-moz-placeholder { /* Firefox 18- */
+color: #2fc2ef !important;
+}
+
+input::-moz-placeholder {  /* Firefox 19+ */
+color: #2fc2ef !important;
+}
+
+input:-ms-input-placeholder {
+color: #2fc2ef !important;
+}
+
+/* Text Area placeholder text color */
+textarea::-webkit-input-placeholder {
+color: #2fc2ef !important;
+}
+
+textarea:-moz-placeholder { /* Firefox 18- */
+color: #2fc2ef !important;
+}
+
+textarea::-moz-placeholder {  /* Firefox 19+ */
+color: #2fc2ef !important;
+}
+
+textarea:-ms-input-placeholder {
+color: #2fc2ef !important;
+}
+
+
+a:hover.no-underline{
+	text-decoration: none;
+}
+
+.cant-see-me {
+	display: none;
+}

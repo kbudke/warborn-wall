@@ -1,0 +1,27 @@
+<body class="bioRhyme">
+	
+<div class="center-it tag-topic-header">
+    <h1><%= @tag.phrase %></h1>
+</div>
+
+<div class="row">
+    <div class="col-md-7 col-md-offset-1">
+			<div class="row">
+	    	<% @tag.tweets.order(created_at: :desc).each do |tweet| %>
+	    	<div class="col-md-12 tweet-area borderline">
+				   <p>
+				   	 <%= link_to image_tag 'yoshi.png' %>
+				     <%= link_to show_user_path(id: tweet.user.id) do %> 
+					   	<%= tweet.user.name %> <span class="no-underline">
+		         	<%= "@#{tweet.user.username}" %></span>
+				     <% end %>
+			  		&#8226; <%= time_ago_in_words(tweet.created_at) %>
+				   </p>
+				   <p><%= tweet.message.html_safe %></p>
+				</div>
+	    <% end %>
+			</div>
+    </div>
+</div>
+
+</body>
