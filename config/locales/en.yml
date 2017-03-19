@@ -24,7 +24,7 @@ en:
   activerecord:
     attributes:
       tweet:
-        message: "A Tweet"
+        message: "A Comment"
       user:
         username: "A handle"
     errors:
@@ -33,7 +33,7 @@ en:
           attributes:
             message:
               blank: " is missing. Cat got your tongue?"
-              too_long: " is only 140 characters. Duh."
+              too_long: " is only 1000 characters. Duh."
         user:
           attributes:
             username:
