@@ -18,13 +18,21 @@
  @import "bootstrap";
  @import "font-awesome";
 
- body { padding:0;margin:0;
-  background: url(<%= asset_path 'clear.jpeg'%>) no-repeat; 
+html { 
+  background: url(<%= asset_path 'clear.jpeg'%>) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
+
+<!--  body { padding:0;margin:0;
+  background: url(<%= asset_path 'clear.jpeg'%>) no-repeat; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+} -->
 
 .jumbotron {
   background: url(<%= asset_path 'warborn-jumbo.png'%>) no-repeat center center;
