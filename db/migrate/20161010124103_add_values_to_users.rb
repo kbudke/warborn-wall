@@ -4,6 +4,6 @@ class AddValuesToUsers < ActiveRecord::Migration[5.0]
     add_column :users, :username, :string
     add_column :users, :bio, :text
     add_column :users, :location, :string
-    add_column :users, :avatar, :string
+    add_column :users, :avatar, :string, default: 'yoshi.png'
   end
 end
