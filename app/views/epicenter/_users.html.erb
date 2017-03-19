@@ -17,7 +17,6 @@
 					<% end %>
 				</div>
 			</div>
-			<h3><%= link_to user.name, show_user_path(id: user.id) %></h3>
 			<p><%= link_to "@#{user.username}", show_user_path(id: user.id) %> <% if user.following.include?(current_user.id) %> <span class="grey-text">FOLLOWS YOU</span> <% end %></p>
 			<p>
 				<%= user.bio %>

@@ -15,7 +15,7 @@
 				<div class="col-md-12 tweet-area borderline">
 					<p>
 						<%= link_to show_user_path(id: tweet.user.id), class: "no-underline" do %>
-							<%= tweet.user.name %> <%= "@#{tweet.user.username}" %>
+							 <%= "@#{tweet.user.username}" %>
 						<% end %>
 						&#8226; <%= time_ago_in_words(tweet.created_at) %>
 					</p>
