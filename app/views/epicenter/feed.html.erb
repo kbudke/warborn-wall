@@ -20,9 +20,7 @@
 						&#8226; <%= time_ago_in_words(tweet.created_at) %>
 					</p>
 					<p><%= tweet.message.html_safe %></p>
-					<p>
-						<%= link_to "ReComment", retweet_path(tweet.id) %>
-					</p>	
+			
 				</div>
 			<% end %>
 		</div>
